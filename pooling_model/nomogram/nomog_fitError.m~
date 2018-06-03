@@ -1,0 +1,9 @@
+function error = nomog_fitError(z, bands, linLog, quantaE, xRes, xLims, optFilter, x_ind, yExp, funcName)
+
+    % call the wrapper function to return the best fit data points
+    % corresponding to the original x-values
+    dataPoints = nomog_fitPoints(z, bands, linLog, quantaE, xRes, xLims, optFilter, x_ind, funcName);
+    
+    % calculate the error compared to the original data
+    % compare "yExp" with "dataPoints" (fit)
+    error = 
