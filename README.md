@@ -89,14 +89,6 @@ _Relative contribution of the rod, cone, and melanopsin photoresponse to the spe
 
 ![protanopic](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/kurtenbach1999_protanopic.png "Protanopic")
 
-### Stabio et al. (2018): M5 Color Opponency
-
-[Stabio et al. (2018)](https://doi.org/10.1016/j.neuron.2017.11.030)
-
-_Serial electron microscopic reconstructions revealed that **M5 cells receive selective UV-opsin drive** from **Type 9 cone bipolar cells** but also **mixed cone signals from bipolar Types 6, 7, and 8**. Recordings suggest that both excitation and inhibition are driven by the ON channel and that **chromatic opponency results from M-cone-driven** surround inhibition mediated by wide-field spiking GABAergic amacrine cells. We show that M5 cells send axons to the dLGN and are thus positioned to provide chromatic signals to visual cortex. These findings underscore that melanopsin's influence extends beyond unconscious reflex functions to encompass cortical vision, perhaps including the perception of color._
-
-![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/stabio2018_M5.png "Init fit")
-
 ### Enter the "notches" and "bumps"
 
 From : _"[Krastel, Alexandridis, and Gertz (1985)](https://doi.org/10.1159/000309536) provided the **first evidence that the pupillary system has access to a "color opponent" visual process**. Krastel et al. showed that the pupillary action spectrum for chromatic flashes on a steady-white background was virtually identical to the spectral sensitivity curve obtained psychophysically under the same stimulus conditions. That is, the action spectrum has **three prominent lobes** with maxima in a long, middle, and short wavelength region and has a **prominent dip** in sensitivity near 570 nm, resembling what visual psychophysicists call the **"Sloan notch"** (see also [Schwartz 2002](https://doi.org/10.1046/j.1475-1313.2000.00535.x), [Calkins et al. 1992](https://doi.org/10.1016/0042-6989(92)90098-4))."_
@@ -112,3 +104,14 @@ From : _"[Krastel, Alexandridis, and Gertz (1985)](https://doi.org/10.1159/00030
 
 _Action spectra derived from the ON, OFF, and steady-state portions of the pupillary response waveform. **(A) Action spectra for individual observers**. The ON action spectra for all observers are plotted in actual quantal sensitivity (reciprocal quanta sec -t deg-2). The psychophysical spectral sensitivity curve (bold solid lines) and other action spectra, however, were shifted vertically to illustrate their similarities and differences. The OFF and steady-state spectra for observer A were shifted by + 0.2 and -0.45, respectively. The steady-state spectrum for observer J was shifted by -0.65. The psychophysical spectral sensitivity curve, OFF and the steady-state spectra for observer M were shifted by -0.5, +0.2 and
 -0.3, respectively. Thee action spectra derived from the **high criterion ON amplitude** and from the **steady-state amplitudes**  can be reasonably described as a **linear sum** of the quantized scotopic and photopic luminous efficiency functions. The relative weights for the photopic function were 49% for observer A, 13% for observer J, and 20% for observer M. **Alternatively**, the two action spectra can be described as a **linear sum of the LWS-,MWS-, and SWS-cone spectra** (thin dotted line; Smith & Pokorny, 1975). The relative weights for LWS- and MWS-cones were 30% and 37% for observer A, 3% and 41% for observer J, and 14% and 20% for observer M, respectively._
+
+### Stabio et al. (2018): M5 Color Opponency
+
+The M5 Cell: A Color-Opponent Intrinsically Photosensitive Retinal Ganglion Cell
+_Maureen E. Stabio, Shai Sabbah, Lauren E. Quattrochi, Marissa C. Ilardi, P. Michelle Fogerson, Megan L. Leyrer, Min Tae Kim, Inkyu Kim, Matthew Schiel, Jordan M. Renna, Kevin L. Briggman, David M. Berson_
+
+[Stabio et al. (2018)](https://doi.org/10.1016/j.neuron.2017.11.030)
+
+_Serial electron microscopic reconstructions revealed that **M5 cells receive selective UV-opsin drive** from **Type 9 cone bipolar cells** but also **mixed cone signals from bipolar Types 6, 7, and 8**. Recordings suggest that both excitation and inhibition are driven by the ON channel and that **chromatic opponency results from M-cone-driven** surround inhibition mediated by wide-field spiking GABAergic amacrine cells. We show that M5 cells send axons to the dLGN and are thus positioned to provide chromatic signals to visual cortex. These findings underscore that melanopsin's influence extends beyond unconscious reflex functions to encompass cortical vision, perhaps including the **perception of color**._
+
+![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/stabio2018_M5.png "Init fit")
