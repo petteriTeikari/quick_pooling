@@ -10,43 +10,6 @@ function [spec, points, stats, actSpectra, x, fval, output_struct, statParam, x0
         % x      - experimental x vector (e.g. wavelengths)
         % y      - experimental y vector (e.g. sensitivity)
         % err    - errors associated     (e.g. SD)
-        
-        % mode   - what model of the submodels to be used
-        %          'simple'
-        %          'opponent'
-        %          'simpleBi'
-        %          'opponentBi'
-        
-        % linLog - linear or logarithmic fitting
-        
-        % comb_k - 2 column vector,                        [k1 k2]
-        % contr  - initial guesses for contributions,      [m0 c0 r0]
-        % p      - LWS/MWS ratio,                           e.g  0.62
-        % densit - densities for the photopigments         [dens_M dens_C dens_R dens_CS]
-        % fMe    - initial value for metaMelanop fraction   e.g. 0.5
-        % oppon  - opponent model parameters (x0)          [fB0 fD0 fE0]
-    
-        % bound  - structure for the model bounds, names same as for initial parameters
-        %
-        %           * if the structure does not exist then that parameter
-        %             is not going to be optimized at all
-        %
-        %           * if it is [] or NaN then the default values are used
-        %
-        %             .comb_k
-        %             .contr
-        %             .p
-        %             .densit
-        %             .fMe
-        %             .oppon
-        
-        % costF  - if you want to define an other cost function rather than
-        %          least-squares, this should be a string and then you do
-        %          custom if-else-end switch
-        %          default is ......   
-        
-        % options - structure containing general options for the model
-        %             .    
     
     %% OPTIMIZE the weights for the contribution model
     % -----------------------------------------------             
@@ -129,7 +92,7 @@ function [spec, points, stats, actSpectra, x, fval, output_struct, statParam, x0
             output = 'optim';
             % options.modeNomogram = 'dynamic'; % updated on each iteration if 'dynamic', useful for fMe
             options.modeNomogram = 'static'; % for 'simple' mode to initialize the shapes only once
-            options.biPhi = 0.70; % relative quantum efficiency
+            % options.biPhi = 0.70; % relative quantum efficiency
             f = @(x) poolingModel_function(x, lambda, y, weights_for_fit, mode, statParam, output, actSpectra, options);
 
         % Define options for minimization function
