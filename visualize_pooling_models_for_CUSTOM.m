@@ -3,7 +3,7 @@ function visualize_pooling_models_for_CUSTOM(CUSTOM_FIT, CUSTOM_stats, ...
                                      dataset_ind, norm_ind, model_ind, error_for_fit_string, ...
                                      dataset_strings, scrsz)
     
-    save('visual_var.mat')
+    % save('visual_var.mat')
     % load('visual_var.mat')
     % close all
    
@@ -162,6 +162,7 @@ function plot_usedSpectra(spectra, tp, sum_cols)
     xlabel('Wavelength [nm]','FontWeight','bold','FontSize',9,...
                      'FontName','Futura Book');
     
+    drawnow
       
 function spectra_out = populate_spectra(names, x, actSpectra, ...
                         header_names, multiplier_indices, output_names)
@@ -203,7 +204,7 @@ function residual_plot(fit_per_tp, stat_per_tp, error_for_fit_string, filename_t
       fileName = mfilename; 
       fullPath = mfilename('fullpath');
       path_Code = strrep(fullPath, fileName, '');
-      path_Data = fullfile(path_Code, '..', 'data_out_from_matlab', 'custom');           
+      path_Data = fullfile(path_Code, 'data_out_from_matlab');           
          
       % write to disk
       % https://www.mathworks.com/matlabcentral/answers/246922-how-to-add-headers-to-a-data-matrix
@@ -250,6 +251,8 @@ function residual_plot(fit_per_tp, stat_per_tp, error_for_fit_string, filename_t
         ylabel('Residuals','FontWeight','bold','FontSize',9,...
                      'FontName','Futura Book');
     end
+    
+    drawnow
     
 function weights_plot(stat_per_tp, error_for_fit_string, filename_tp, ...
                               normalize_method, model_string, group, ...
@@ -308,7 +311,7 @@ function plot_each_subplot(fit, stats, filename_tp, ...
     set(gca, 'FontName', style.fontName, 'FontSize', style.fontBaseSize)  
     
     tit = title(titleString,'FontWeight','bold','FontSize',11,...
-                'FontName','Futura Book');
+                'FontName','Futura Book','interpreter','none');
             
     
     lab(1) = xlabel('','FontWeight','bold','FontSize',9,...
@@ -333,7 +336,7 @@ function plot_each_subplot(fit, stats, filename_tp, ...
     fileName = mfilename; 
     fullPath = mfilename('fullpath');
     path_Code = strrep(fullPath, fileName, '');
-    path_Data = fullfile(path_Code, '..', 'data_out_from_matlab', 'custom');      
+    path_Data = fullfile(path_Code, 'data_out_from_matlab');      
     full_path = fullfile(path_Data, filename_out);
       
     % https://www.mathworks.com/matlabcentral/answers/246922-how-to-add-headers-to-a-data-matrix

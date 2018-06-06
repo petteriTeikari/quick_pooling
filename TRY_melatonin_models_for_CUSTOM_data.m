@@ -8,13 +8,15 @@ function TRY_melatonin_models_for_CUSTOM_data()
     fileName = mfilename; 
     fullPath = mfilename('fullpath');
     path_Code = strrep(fullPath, fileName, '');
-    path_Data = fullfile(path_Code, '..', 'data');
+    path_Data = fullfile(path_Code, 'data');
     
     % add subfunctions
+    addpath(fullfile(path_Code, 'matlab'))
     addpath(fullfile(path_Code, 'pooling_model'))
-    addpath(fullfile(path_Code, 'pooling_model', 'nomogram'))
-    addpath(fullfile(path_Code, 'pooling_model', 'templates'))
-    addpath(fullfile(path_Code, 'pooling_model', 'ocularmedia'))
+    addpath(fullfile(path_Code, 'photoreception_tools'))
+    addpath(fullfile(path_Code, 'photoreception_tools', 'nomogram'))
+    addpath(fullfile(path_Code, 'photoreception_tools', 'templates'))
+    addpath(fullfile(path_Code, 'photoreception_tools', 'ocularmedia'))
 
 
     
@@ -37,6 +39,7 @@ function TRY_melatonin_models_for_CUSTOM_data()
     plot_ON_fit = 0;
         
     for norm = 1 : length(normalize_method)
+        
         for model = 1 : length(model_strings)            
             
             for dataset = 1 : length(CUSTOM_META.strNames)
