@@ -236,7 +236,7 @@ function residual_plot(fit_per_tp, stat_per_tp, error_for_fit_string, filename_t
       output = [header; num2cell(mat_out)];
       output_table = cell2table(output);
       disp(['Saving ', full_path])
-      writetable(output_table, filename_out, 'WriteVariableNames', false)
+      writetable(output_table, full_path, 'WriteVariableNames', false)
       
       % set(s, 'XLim', plotStyle.xLims)
       if tp == 1
