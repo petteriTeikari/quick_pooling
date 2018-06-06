@@ -37,6 +37,6 @@ plot.parameter.evolution = function(contrib_df, aux_df, param, param_out) {
     
   }
     
-  do.call(grid.arrange, c(p, list(ncol=2)))
+  do.call(grid.arrange, c(p, list(ncol=1)))
   
 }

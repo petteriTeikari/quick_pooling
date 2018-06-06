@@ -7,9 +7,9 @@ plot.model.fit.per.timepoint = function(group_name, timepoint,
   
   # In case you want the scale the fit and the data point to the original range
   # TODO! Need to be implemented
-  orig_mean = orig_list[[1]]
-  orig_SD = orig_list[[2]]
-  orig_all = orig_list[[3]]
+  # orig_mean = orig_list[[1]]
+  # orig_SD = orig_list[[2]]
+  # orig_all = orig_list[[3]]
   
   # Convert lists to dataframes
   dfs = convert.lists.to.df.for.timepoint.plot(model_names,

@@ -292,8 +292,7 @@ convert.lists.to.df.for.timepoint.plot = function(model_names,
   # TODO!
   # ------------------------
   # NOW A TOTALLY GHETTO FIX HERE
-  # In the original Najjar et al. dataset, the wavelength vectors were
-  # always the same which is not anymore the case with Brainard et al. 
+  # the case with Brainard et al. 
   # and Thapan et al. which used different wavelengths, now only the Thapan is saved to input
   
   # If there is a mismatch between x and y
