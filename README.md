@@ -4,29 +4,11 @@
 
 This repository implements couple of photoreception models in the Quick Pooling model ([Quick 1974](https://www.ncbi.nlm.nih.gov/pubmed/4453110)) framework. I use the melatonin suppression data as demo data for this ([Thapan et al. 2001](https://dx.doi.org/10.1111%2Fj.1469-7793.2001.t01-1-00261.x), [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001)). [Thapan et al. 2001](https://dx.doi.org/10.1111%2Fj.1469-7793.2001.t01-1-00261.x) used a shorter light duration (30 min) for their melatonin suppression study compared to [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001) who used longer duration (90 min exposure). Based on the PLR results by ([McDougal and Gamlin, 2010](https://dx.doi.org/10.1016%2Fj.visres.2009.10.012)), one could hypothesize that [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001) will show greater melanopsin contribution to the melatonin suppression.
 
-### The models implemented
+### Retinal circuit driving the melatonin suppression?
 
-**1) SIMPLE** 
+![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/retinalCircuit.png "Init fit")
 
-as described in ([McDougal and Gamlin, 2010](https://dx.doi.org/10.1016%2Fj.visres.2009.10.012)) for pupillometric (PLR) study to investigate the relative contribution of melanopsin to pupillary light response.
-
-![Simple model](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_simple.png "Simple model")
-
-**2) Kurtenbach et al.(1999): Spectral Opponency**
-
-![Opponent Kurtenbach 1999](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_opponent1999.png "Opponent Kurtenbach 1999")
-
-**3) Spitschan et al. (2014): PLR and spectral opponency revisited**
-
-[Spitschan et al. (2014)](https://dx.doi.org/10.1073/pnas.1400942111): **S = Melanopsin + (MWS+LWS) - SWS** *+Rods (PT)* 
-
-![Opponent Spitschan 2014](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_opponent2014.jpg "Opponent Spitschan 2014")
-
-**4) Woelders et al. (2018): PLR and spectral opponency revisited**
-
-[Woelders et al. (2018)](https://doi.org/10.1073/pnas.1716281115): **S = Melanopsin -MWS +LWS - SWS** *+Rods (PT)* 
-
-![Opponent Wolders 2018](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_opponent2018.png "Opponent Wolders 2018")
+_See [the build-up](https://www.dropbox.com/s/696l35u8aspquwp/reaMelatonin_manuscript.pdf?dl=0f) on how this was imagined back in 2013
 
 ## To use
 
@@ -38,9 +20,46 @@ To pull and update:
 
 `git pull && git submodule update --recursive --remote`
 
-To run the main script:
+### MATLAB: Quick Pooling model
+
+To run the main script in MATLAB that does the fitting with `fmincon`:
 
 Run `TRY_melatonin_models_for_CUSTOM_data.m`
+
+#### Detailed MATLAB instructions
+
+**TODO!**
+
+### R: Analysis and prettier plotting of the results
+
+#### Detailed R instructions
+
+**TODO!**
+
+## The models implemented
+
+### **1) SIMPLE** 
+
+as described in ([McDougal and Gamlin, 2010](https://dx.doi.org/10.1016%2Fj.visres.2009.10.012)) for pupillometric (PLR) study to investigate the relative contribution of melanopsin to pupillary light response.
+
+![Simple model](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_simple.png "Simple model")
+
+### **2) Kurtenbach et al.(1999): Spectral Opponency**
+
+![Opponent Kurtenbach 1999](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_opponent1999.png "Opponent Kurtenbach 1999")
+
+### **3) Spitschan et al. (2014): PLR and spectral opponency revisited**
+
+[Spitschan et al. (2014)](https://dx.doi.org/10.1073/pnas.1400942111): **S = Melanopsin + (MWS+LWS) - SWS** *+Rods (PT)* 
+
+![Opponent Spitschan 2014](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_opponent2014.jpg "Opponent Spitschan 2014")
+
+### **4) Woelders et al. (2018): PLR and spectral opponency revisited**
+
+[Woelders et al. (2018)](https://doi.org/10.1073/pnas.1716281115): **S = Melanopsin -MWS +LWS - SWS** *+Rods (PT)* 
+
+![Opponent Wolders 2018](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_opponent2018.png "Opponent Wolders 2018")
+
 
 ## Some further theory
 
