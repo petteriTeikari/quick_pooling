@@ -44,7 +44,7 @@ function TRY_melatonin_models_for_CUSTOM_data()
             
             for dataset = 1 : length(CUSTOM_META.strNames)
                 
-                [norm model dataset]
+                % [norm model dataset]
                 
                 % NORMALIZE, always the same independent of the model type                
                 [CUSTOM_norm{dataset}{norm}, CUSTOM_stats{dataset}{norm}{model}] = ...
