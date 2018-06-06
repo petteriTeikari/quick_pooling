@@ -44,7 +44,7 @@ Run `TRY_melatonin_models_for_CUSTOM_data.m`
 
 #### Detailed MATLAB instructions
 
-**TODO!**
+For some more detailed walk-through of the rather patchy **[Matlab code in the Wiki](https://github.com/petteriTeikari/quick_pooling/wiki/Matlab-implementation-details)**
 
 ### R: Analysis and prettier plotting of the results
 
