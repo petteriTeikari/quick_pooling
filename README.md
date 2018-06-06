@@ -4,11 +4,27 @@
 
 This repository implements couple of photoreception models in the Quick Pooling model ([Quick 1974](https://www.ncbi.nlm.nih.gov/pubmed/4453110)) framework. I use the melatonin suppression data as demo data for this ([Thapan et al. 2001](https://dx.doi.org/10.1111%2Fj.1469-7793.2001.t01-1-00261.x), [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001)). [Thapan et al. 2001](https://dx.doi.org/10.1111%2Fj.1469-7793.2001.t01-1-00261.x) used a shorter light duration (30 min) for their melatonin suppression study compared to [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001) who used longer duration (90 min exposure). Based on the PLR results by ([McDougal and Gamlin, 2010](https://dx.doi.org/10.1016%2Fj.visres.2009.10.012)), one could hypothesize that [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001) will show greater melanopsin contribution to the melatonin suppression.
 
+This hypothesis of increased melanopsin contribution can be seen in the difference between the model simulations when using the latest opponent model from [Woelders et al. (2018)](https://doi.org/10.1073/pnas.1716281115) (see below)
+
+![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/R_figures_out/parameter_evolution.png "Init fit")
+
+The opponent model from [Woelders et al. (2018)](https://doi.org/10.1073/pnas.1716281115) is able to follow the melatonin data quite well:
+
+![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/R_figures_out/model_fit_comparison.png "Init fit")
+
+_Note that the model fits seem to overlap probably due to optimization issues with `fmincon` and further playing around could be done with the optimization algorithm_ Or you can try just brute force [Genetic Algorithms](https://github.com/estsauver/GAOT) as used in my other project for [Spectral Separability](https://github.com/petteriTeikari/spectralSeparability) for reducing spectral crosstalk between multiphoton dyes.
+
+See the following line in `poolingModel_main.m`:
+
+```matlab
+optimOpt = optimset(optimOpt, 'Algorithm', 'interior-point');
+```
+
 ### Retinal circuit driving the melatonin suppression?
 
 ![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/retinalCircuit.png "Init fit")
 
-_See [the build-up](https://www.dropbox.com/s/696l35u8aspquwp/reaMelatonin_manuscript.pdf?dl=0f) on how this was imagined back in 2013
+_See [the build-up](https://www.dropbox.com/s/696l35u8aspquwp/reaMelatonin_manuscript.pdf?dl=0f) on how this was imagined back in 2013_
 
 ## To use
 
@@ -32,6 +48,8 @@ Run `TRY_melatonin_models_for_CUSTOM_data.m`
 
 ### R: Analysis and prettier plotting of the results
 
+Run `plot_matlab_fitting.R`
+
 #### Detailed R instructions
 
 **TODO!**
@@ -45,6 +63,8 @@ as described in ([McDougal and Gamlin, 2010](https://dx.doi.org/10.1016%2Fj.visr
 ![Simple model](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_simple.png "Simple model")
 
 ### **2) Kurtenbach et al.(1999): Spectral Opponency**
+
+[Kurtenbach et al. (1999)](http://dx.doi.org/10.1364/JOSAA.16.001541) demonstrated some color opponency "compound action spectra" for trichromatic, deuteranopic and protanopic individuals:
 
 ![Opponent Kurtenbach 1999](https://github.com/petteriTeikari/quick_pooling/blob/master/data_out_from_matlab/custom_opponent1999.png "Opponent Kurtenbach 1999")
 
