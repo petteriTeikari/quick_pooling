@@ -125,6 +125,22 @@ From : _"[Krastel, Alexandridis, and Gertz (1985)](https://doi.org/10.1159/00030
 _Action spectra derived from the ON, OFF, and steady-state portions of the pupillary response waveform. **(A) Action spectra for individual observers**. The ON action spectra for all observers are plotted in actual quantal sensitivity (reciprocal quanta sec -t deg-2). The psychophysical spectral sensitivity curve (bold solid lines) and other action spectra, however, were shifted vertically to illustrate their similarities and differences. The OFF and steady-state spectra for observer A were shifted by + 0.2 and -0.45, respectively. The steady-state spectrum for observer J was shifted by -0.65. The psychophysical spectral sensitivity curve, OFF and the steady-state spectra for observer M were shifted by -0.5, +0.2 and
 -0.3, respectively. Thee action spectra derived from the **high criterion ON amplitude** and from the **steady-state amplitudes**  can be reasonably described as a **linear sum** of the quantized scotopic and photopic luminous efficiency functions. The relative weights for the photopic function were 49% for observer A, 13% for observer J, and 20% for observer M. **Alternatively**, the two action spectra can be described as a **linear sum of the LWS-,MWS-, and SWS-cone spectra** (thin dotted line; Smith & Pokorny, 1975). The relative weights for LWS- and MWS-cones were 30% and 37% for observer A, 3% and 41% for observer J, and 14% and 20% for observer M, respectively._
 
+### Adhikari et al. (2016): Reproducing McDougal and Gamlin's findings
+
+[Adhikari et al. (2016)](https://doi.org/10.1371/journal.pone.0161175)
+
+_Here, we evaluated the **photoreceptor contributions** to the early phase post-illumination persistent response (PIPR, 0.6 s to 5.0 s) by measuring the spectral sensitivity of the criterion PIPR amplitude in response to 1 s light pulses at five narrowband stimulus wavelengths (409, 464, 508, 531 and 592 nm). The retinal irradiance producing a criterion PIPR was normalised to the peak and fitted by either a single photopigment nomogram or the combined melanopsin and rhodopsin spectral nomograms with the +L+M cone photopic luminous efficiency (Vλ) function._
+
+![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/journal.pone.0161175.g006.PNG "Init fit")
+
+### Gooley et al. (2010): Showing similar time-dependency for melatonin suppression when comparing 460 nm to 555 nm
+
+[Gooley et al. (2010)](http://doi.org/10.1126/scitranslmed.3000741)
+
+_Dose-response curves for melatonin suppression and circadian phase resetting were constructed in subjects exposed to blue (460 nm) or green (555 nm) light near the onset of nocturnal melatonin secretion. At the **beginning of the intervention** (Q1), 555-nm light was equally effective as 460-nm light at suppressing melatonin, suggesting a significant contribution from the three-cone visual system (lamba max = 555 nm). During the light exposure, however, the spectral sensitivity to 555-nm light **decayed exponentially** relative to 460-nm light (last time point the Q4)._
+
+![Init fit](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/gooley2010_melatoninSuppressionTimeDependency.png "Init fit")
+
 ### Stabio et al. (2018): M5 Color Opponency
 
 The M5 Cell: A Color-Opponent Intrinsically Photosensitive Retinal Ganglion Cell
