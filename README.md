@@ -1,5 +1,9 @@
 # Quick Pooling model for Photoreceptor Contributions
 
+See nice background for ["Github Publishing"](https://doi.org/10.1016/j.conb.2015.04.002) by [Jeremy Freeman](https://github.com/freeman-lab), and also the cool project [Deep Review](https://github.com/greenelab/deep-review), if your institution KPIs do not reward extrajournal activities :P
+
+_This repository is home to the Deep Review, a review article on deep learning in precision medicine. The Deep Review is collaboratively written on GitHub using a tool called Manubot_
+
 ## Implementation
 
 This repository implements couple of photoreception models in the Quick Pooling model ([Quick 1974](https://www.ncbi.nlm.nih.gov/pubmed/4453110)) framework. I use the melatonin suppression data as demo data for this ([Thapan et al. 2001](https://dx.doi.org/10.1111%2Fj.1469-7793.2001.t01-1-00261.x), [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001)). [Thapan et al. 2001](https://dx.doi.org/10.1111%2Fj.1469-7793.2001.t01-1-00261.x) used a shorter light duration (30 min) for their melatonin suppression study compared to [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001) who used longer duration (90 min exposure). Based on the PLR results by ([McDougal and Gamlin, 2010](https://dx.doi.org/10.1016%2Fj.visres.2009.10.012)), one could hypothesize that [Brainard et al. 2001](https://doi.org/10.1523/JNEUROSCI.21-16-06405.2001) will show greater melanopsin contribution to the melatonin suppression.
