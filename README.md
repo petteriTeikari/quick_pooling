@@ -113,6 +113,9 @@ _Relative contribution of the rod, cone, and melanopsin photoresponse to the spe
 
 From : _"[Krastel, Alexandridis, and Gertz (1985)](https://doi.org/10.1159/000309536) provided the **first evidence that the pupillary system has access to a "color opponent" visual process**. Krastel et al. showed that the pupillary action spectrum for chromatic flashes on a steady-white background was virtually identical to the spectral sensitivity curve obtained psychophysically under the same stimulus conditions. That is, the action spectrum has **three prominent lobes** with maxima in a long, middle, and short wavelength region and has a **prominent dip** in sensitivity near 570 nm, resembling what visual psychophysicists call the **"Sloan notch"** (see also [Schwartz 2002](https://doi.org/10.1046/j.1475-1313.2000.00535.x), [Calkins et al. 1992](https://doi.org/10.1016/0042-6989(92)90098-4))."_
 
+From Petteri Teikari's PhD thesis: 
+[Spectral modulation of melanopsin responses : role of
+melanopsin bistability in pupillary light reflex](https://tel.archives-ouvertes.fr/file/index/docid/999326/filename/TH2012_Teikari_Petteri_ii.pdf)
 
 [![Sloan Notch](https://github.com/petteriTeikari/quick_pooling/blob/master/images_biblio/teikari2012_thesis_sloanNotch.png "Sloan Notch")](https://tel.archives-ouvertes.fr/file/index/docid/999326/filename/TH2012_Teikari_Petteri_ii.pdf)
 
